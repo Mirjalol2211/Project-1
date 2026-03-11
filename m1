@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tashkent Apartments Map</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h2>Apartments Map - Tashkent</h2>
+
+<div id="filters">
+
+Цена:
+<input id="minPrice" placeholder="min">
+<input id="maxPrice" placeholder="max">
+
+Комнаты:
+<select id="rooms">
+<option value="">any</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+
+Тип:
+<select id="type">
+<option value="">any</option>
+<option value="sale">sale</option>
+<option value="rent">rent</option>
+</select>
+
+<button onclick="loadApartments()">Filter</button>
+
+</div>
+
+<div id="map"></div>
+
+<h3>District statistics</h3>
+
+<div id="stats"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
